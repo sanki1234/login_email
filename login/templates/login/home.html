@@ -1,0 +1,26 @@
+{% extends 'login/base.html' %}
+    {% block body %}
+   
+    
+    <div>
+        <h1 style="text-align: center;text-shadow: 50cm; color:red; margin: 10%;">WELCOME TO THE POLLING APP</h1>
+        <div style="align-items: center; text-align: center;">
+            <button><a href="{% url 'login' %}">LOGIN</a></button>
+            <button><a href="{% url 'register' %}">REGISTER</a></button>
+            <button ><a href="{% url 'verification' %}">VERIFY</a></button>
+        </div>
+        <div style="align-items: center; text-align: center;">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">POLLS</h5>
+                  <p class="card-text">ANY type of polling you want</p>
+                  <a href="#" class="btn btn-primary">GO TO ROOM</a>
+                  <a href="#" class="btn btn-primary">CREATE ROOM</a>
+                </div>
+              </div>
+        </div>
+
+    </div>
+    
+    
+    {% endblock %}

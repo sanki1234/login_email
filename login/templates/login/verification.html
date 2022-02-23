@@ -1,0 +1,26 @@
+{% extends 'login/base.html' %}
+    {% block body %}
+    <div class="global-container">
+        <div class="card login-form">
+        <div class="card-body">
+            <h3 class="card-title text-center"></h3>
+            <div class="card-text">
+                <!--
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+                <form method="POST" >
+                    {% csrf_token %}
+                    
+                    <p><strong>OTP</strong> has been <strong>sent to your mail</strong></p>
+                    <div class="form-group">
+                        <input type="number" placeholder="ENTER OTP" name="otp" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <button type="submit"  class="btn btn-primary btn-block">CONFIRM</button>
+                    </div>
+                
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    {% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'login/base.html' %}
+    {% block body %}
+    <div class="global-container">
+        <div class="card login-form">
+        <div class="card-body">
+            <h3 class="card-title text-center">LOGIN</h3>
+            <div class="card-text">
+                {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-info">
+                                {{message}}
+                            </div>
+                        {% endfor %}
+                {% endif %}
+                <!--
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+                <form>
+                    <h1>hello</h1>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    {% endblock %}
